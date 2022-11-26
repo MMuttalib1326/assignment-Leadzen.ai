@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #ffffff;
+}
+
+body, input, button {
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+}
+
+.app {
+  background-color: #121212;
+  width: 100%;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app h1 {
+  font-size: 4em;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+input {
+  padding: 12px 24px;
+  border-style: none;
+  border-radius: 1em;
+  outline: none;
+  letter-spacing: 3px;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+h2 {
+  letter-spacing: 2.5px;
+  padding-bottom: 16px;
+}
+
+.dimmedSectiontTitle {
+  border: none;
+  color: rgba(255, 255, 255, 0.596);
+}
+
+.boldSectionTitle {
+  color: white;
+}
+
+.todoContainer:first-child {
+  padding-bottom: 64px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid white;
+}
+
+.todoItem, .todoItem button {
+  color: rgb(72, 172, 152);
+}
+
+button.transparent {
+  background: transparent;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+.buttonsSection button:first-child:not(:last-child) {
+  margin-right: 16px;
+}
+
+
+@media screen and (max-width: 400px) {
+  body, input, button {
+    font-size: 18px;
+  }
+}
